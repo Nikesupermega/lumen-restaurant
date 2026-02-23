@@ -1,30 +1,115 @@
-<!DOCTYPE html>
-<html lang="it">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Rubrica</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Lumen</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <nav>
+            <ul>
+                <img src="img/NavLUMEN.png" alt="Logo Lumen" id="logo">
+                <li><a href="#about">About</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#contact">Contatti</a></li>
+            </ul>
+        </nav>
+        <div id="all">
+           <div id="header">
+                <h1 id="title">Lumen</h1>
+                <p id="sottotitolo">Un'esperienza culinaria unica, tra sapori e luce.</p>
+                <button id="bottoneG">Prenota ora</button>
+            </div>
+            <div id="about">
+                <h2 class="TitoloSezione">Chi siamo</h2>
+                <p>Siamo un ristorante specializzato in cucina italiana moderna, dove ogni piatto è una creazione unica che combina tradizione e innovazione.</p>
+            </div>
+            <div id="menu">
+                <h2 class="TitoloSezione">Il nostro menu</h2>
+    
+                <div class="menuCategory">
+                    <h3>Antipasti</h3>
+                    <div class="menuItem">
+                        <span class="piatto">Burrata con pomodorini</span>
+                        <span class="prezzo">€12</span>
+                    </div>
+                    <div class="menuItem">
+                        <span class="piatto">Carpaccio di manzo</span>
+                        <span class="prezzo">€14</span>
+                    </div>
+                </div>
 
-<h2>Rubrica contatti</h2>
+                <div class="menuCategory">
+                    <h3>Primi</h3>
+                    <div class="menuItem">
+                        <span class="piatto">Tagliolini al tartufo</span>
+                        <span class="prezzo">€18</span>
+                    </div>
+                    <div class="menuItem">
+                        <span class="piatto">Risotto al limone e gamberi</span>
+                        <span class="prezzo">€20</span>
+                    </div>
+                </div>
 
-<div class="cerca-div">
-  <input type="text" id="cerca" placeholder="Cerca contatti…">
-  <span class="search-icon">🔍</span>
-</div>
+                <div class="menuCategory">
+                    <h3>Secondi</h3>
+                    <div class="menuItem">
+                        <span class="piatto">Filetto di branzino</span>
+                        <span class="prezzo">€24</span>
+                    </div>
+                    <div class="menuItem">
+                        <span class="piatto">Controfiletto alla brace</span>
+                        <span class="prezzo">€26</span>
+                    </div>
+                </div>
 
-<form id="form" class="card">
-  <input id="nome" placeholder="Nome" required>
-  <input id="cognome" placeholder="Cognome">
-  <input id="telefono" placeholder="Telefono" required>
-  <button>Invia</button>
-</form>
-
-<ul id="lista"></ul>
-
-<script src="script.js"></script>
-</body>
+                <div class="menuCategory">
+                    <h3>Dolci</h3>
+                    <div class="menuItem">
+                        <span class="piatto">Tiramisù della casa</span>
+                        <span class="prezzo">€8</span>
+                    </div>
+                    <div class="menuItem">
+                        <span class="piatto">Panna cotta ai frutti di bosco</span>
+                        <span class="prezzo">€7</span>
+                    </div>
+                </div>
+            </div>
+            <div id="gallery">
+                <h2 class="TitoloSezione">Galleria</h2>
+                <div id="galleryGrid">
+                    <img src="img/piatto1.jpg" alt="Piatto 1">
+                    <img src="img/piatto2.jpg" alt="Piatto 2">
+                    <img src="img/piatto3.jpg" alt="Piatto 3">
+                    <img src="img/piatto4.jpg" alt="Piatto 4">
+                    <img src="img/piatto5.jpg" alt="Piatto 5">
+                    <img src="img/piatto6.jpg" alt="Piatto 6">
+                </div>
+            </div>
+            <div id="contact">
+                <h2 class="TitoloSezione">Prenota un tavolo</h2>
+                <form id="formPrenotazione">
+                    <div class="formGroup">
+                        <label for="nome">Nome e Cognome</label>
+                        <input type="text" id="nome" placeholder="Il tuo nome">
+                    </div>
+                    <div class="formGroup">
+                        <label for="data">Data</label>
+                        <input type="date" id="data">
+                    </div>
+                    <div class="formGroup">
+                        <label for="persone">Numero di persone</label>
+                        <input type="number" id="persone" min="1" max="20" placeholder="2">
+                    </div>
+                    <div class="formGroup">
+                        <label for="messaggio">Note</label>
+                        <textarea id="messaggio" placeholder="Allergie, occasioni speciali..."></textarea>
+                    </div>
+                    <button type="submit" id="bottoneG">Prenota ora</button>
+                </form>
+            </div>
+        </div>
+    </body>
 </html>
-
