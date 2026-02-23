@@ -1,0 +1,97 @@
+:root {
+  --bg: #f6f7fb;
+  --card: #ffffff;
+  --primary: #4f46e5;
+  --accent: #6366f1;
+  --text: #111827;
+  --muted: #6b7280;
+  --radius: 14px;
+}
+
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#dettagli {
+  max-width: 500px;
+  margin: auto;
+  background: var(--card);
+  padding: 20px;
+  border-radius: var(--radius);
+}
+
+#dettagli p {
+  margin: 10px 0;
+  font-size: 15px;
+}
+
+#add {
+  display: block;
+  margin: 20px auto;
+  background: var(--primary);
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 999px;
+  cursor: pointer;
+}
+
+#add:hover {
+  background: var(--accent);
+}
+
+/* EXTRA FORM */
+#extraForm {
+  max-width: 500px;
+  margin: 20px auto;
+  background: var(--card);
+  padding: 16px;
+  border-radius: var(--radius);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+#extraForm input {
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+}
+
+#salva {
+  background: var(--primary);
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 999px;
+  cursor: pointer;
+}
+
+#salva:hover {
+  background: var(--accent);
+}
+
+
+svg{
+    margin-left: 40px;
+    padding: 10px;
+    background-color:var(--primary);
+    border-radius: 25px;
+    fill:var(--card);
+    cursor: pointer;
+}
+
+svg:hover{
+    background-color:var(--accent);
+}
+
