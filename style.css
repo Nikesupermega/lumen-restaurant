@@ -60,7 +60,7 @@ nav a:hover {
 /* HEADER */
 #header {
     height: 100vh;
-    background-image: url('img/piatto1.jpg');
+    background-image: url('piatto1.jpg');
     background-size: cover;
     background-position: center;
     display: flex;
